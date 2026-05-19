@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgroFuturo - Simulador de Soja</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🌱 AgroFuturo</h1>
+    <p>
+      Simulador de Plantação de Soja Sustentável
+    </p>
+  </header>
+
+  <main class="container">
+
+    <section class="card">
+
+      <h2>Configurar Safra</h2>
+
+      <label>Irrigação</label>
+      <select id="irrigacao">
+        <option value="baixa">Baixa</option>
+        <option value="media">Média</option>
+        <option value="alta">Alta</option>
+      </select>
+
+      <label>Tipo de Fertilizante</label>
+      <select id="fertilizante">
+        <option value="organico">Orgânico</option>
+        <option value="quimico">Químico</option>
+      </select>
+
+      <label>Uso de Agrotóxicos</label>
+      <select id="agrotoxico">
+        <option value="baixo">Baixo</option>
+        <option value="moderado">Moderado</option>
+        <option value="alto">Excessivo</option>
+      </select>
+
+      <label>Preservação Ambiental</label>
+      <select id="preservacao">
+        <option value="baixa">Baixa</option>
+        <option value="media">Média</option>
+        <option value="alta">Alta</option>
+      </select>
+
+      <label>Rotação de Culturas</label>
+      <select id="rotacao">
+        <option value="sim">Sim</option>
+        <option value="nao">Não</option>
+      </select>
+
+      <button onclick="simular()">
+        Simular Safra
+      </button>
+
+    </section>
+
+    <section class="resultado card">
+
+      <h2>Resultado</h2>
+
+      <div id="resultado">
+        Faça a simulação para ver os resultados.
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
